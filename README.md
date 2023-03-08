@@ -35,7 +35,7 @@ This is a simple chatbot application built with Java and Spring Boot.
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/KavidiDeSilva/ProductAssistBot.git`
-2. Build the project: `mvn clean install`
+2. Build the project: `./gradlew clean build`
 
 ## Usage
 
