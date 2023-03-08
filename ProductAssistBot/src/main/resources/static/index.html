@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Assistance Chatbot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">Product Assistance Chatbot</h2>
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <label for="userInput">Enter your message:</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="userInput" placeholder="Type here..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" type="submit" id="button-addon2">Send</button>
+                        </div>
+                    </form>
+                    <hr>
+                    <div id="chatbox">
+                        <p class="text-muted">Chat with the chatbot...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@0.24.0/dist/axios.min.js"></script>
+<script>
+        $('form').submit(function(event) {
+            event.preventDefault();
+            var userInput = $('#userInput').val();
+            $('#chatbox').append('<p><strong>You:</strong> ' + userInput + '</p>');
+            $('#userInput').val('');
+            axios.post('/product/assist', {
+                userInput: userInput
+            })
+            .then(function(response) {
+                console.log(response);
+                $('#chatbox').append('<p><strong>Chatbot:</strong> ' + response.data + '</p>');
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
+        });
+    </script>
+</body>
+</html>
