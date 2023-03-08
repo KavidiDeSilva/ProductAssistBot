@@ -16,7 +16,7 @@ import java.net.URL;
 public class ChatbotService {
 
     private static final String API_ENDPOINT = "https://api.openai.com/v1/completions";
-    private static final String API_KEY = "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"; // Replace with your API key
+    private static final String API_KEY = "Replace with your API key"; // Replace with your API key
 
     public String getChatbotResponse(String userInput) {
         try {
@@ -24,7 +24,7 @@ public class ChatbotService {
             JSONObject requestBody = new JSONObject();
             requestBody.put("model", "text-davinci-003");
             requestBody.put("prompt", userInput);
-            requestBody.put("max_tokens", 64);
+            requestBody.put("max_tokens", 100);
             requestBody.put("temperature", 0.5);
 
             // Create HTTP connection and set headers
