@@ -46,7 +46,7 @@ This is a simple chatbot application built with Java and Spring Boot.
 ## Contributing
 
 Please follow the [contribution guidelines](CONTRIBUTING.md) when submitting code changes.
-Also, please be sure to change the `API_KEY` value in `ChatGPTClient.java` to your own ChatGPT API key before testing or deploying the application.
+Also, please be sure to change the `API_KEY` value in `ChatbotService.java` to your own ChatGPT API key before testing or deploying the application.
 
 ## Credits
 
