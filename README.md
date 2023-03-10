@@ -17,23 +17,21 @@ ProductAssistBot is a chatbot application built using Java, Spring Boot, and Ope
 │   │   ├── java/
 │   │   │   ├── org/
 │   │   │   │   ├── productx/
-│   │   │   │   │   ├── ChatbotApplication.java      # main class
+│   │   │   │   │   ├── ProductAssistBotApplication.java      # main class
 │   │   │   │   │   ├── controller/
-│   │   │   │   │   │   ├──ChatbotController.java    # controller class
+│   │   │   │   │   │   ├──ProductController.java             # controller class
 │   │   │   │   │   ├── service/
-│   │   │   │   │   │   ├──ChatbotService.java       # service class
+│   │   │   │   │   │   ├──ChatbotService.java                # service class
 │   │   ├── resources/
-│   │   │   ├── application.properties               # configuration file
+│   │   │   ├── application.properties                        # configuration file
 │   │   │   └── static/
-│   │   │       ├── chat.html                        # HTML file for chat page
+│   │   │       ├── index.html                                # HTML file for chat page
 │   ├── test/
 │   │   └── java/
-│   │       └── com/
-│   │           └── example/
-│   │               ├── ChatbotControllerTest.java   # test class for controller
-│   │               └── ChatbotServiceTest.java      # test class for service
-├── build.gradle                                     # Gradle configuration file
-├── settings.gradle                                  # Gradle settings file
+│   │       └── org/
+│   │           └── productx/
+├── build.gradle                                              # Gradle configuration file
+├── settings.gradle                                           # Gradle settings file
 ```
 ## Installation
 To install ProductAssistBot, follow these steps:
