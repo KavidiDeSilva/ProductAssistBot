@@ -36,20 +36,17 @@ This is a simple chatbot application built with Java and Spring Boot.
 ├── settings.gradle                                  # Gradle settings file
 ```
 ## Installation
+To install ProductAssistBot, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/KavidiDeSilva/ProductAssistBot.git`
 2. Build the project: `./gradlew clean build`
-
-## Usage
-
-1. Navigate to current folder `cd folder_path`
-2. Start the application: `java -jar ProductAssistBot.jar`
-3. Open a web browser and navigate to `http://localhost:8080/`
+3. Update the API_KEY value in `ChatbotService.java` and `application.properties` to your own OpenAI API key.
+4. Start the application: `java -jar ProductAssistBot.jar`
+5. Open a web browser and navigate to `http://localhost:8080/`
 
 ## Contributing
 
 Please follow the [contribution guidelines](CONTRIBUTING.md) when submitting code changes.
-Also, please be sure to change the `API_KEY` value in `ChatbotService.java` and `application.properties` to your own ChatGPT API key before testing or deploying the application.
 
 ## Credits
 
@@ -57,5 +54,5 @@ Also, please be sure to change the `API_KEY` value in `ChatbotService.java` and 
 - [OpenAI API](https://openai.com/api/)
 - [Bootstrap](https://getbootstrap.com/)
 
-
+Thank you for using ProductAssistBot!
 
