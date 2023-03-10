@@ -7,6 +7,9 @@ This is a simple chatbot application built with Java and Spring Boot.
 - Responds to user messages with pre-defined answers.
 - Can be trained on new data to improve its responses.
 
+![photo_2023-03-10_17-35-40s](https://user-images.githubusercontent.com/40288071/224312266-57dca1e1-2bdc-43a4-b1e4-e7607231e01f.jpg)
+
+
 ## File Structure
 
 ```├── src/
