@@ -1,6 +1,6 @@
 # ProductAssistBot
 
-This is a simple chatbot application built with Java and Spring Boot.
+ProductAssistBot is a chatbot application built using Java, Spring Boot, and OpenAI's GPT-3 API. It provides an interface for users to chat with the bot and receive information about various products.
 
 ## Features
 
@@ -39,10 +39,14 @@ This is a simple chatbot application built with Java and Spring Boot.
 To install ProductAssistBot, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/KavidiDeSilva/ProductAssistBot.git`
-2. Build the project: `./gradlew clean build`
-3. Update the API_KEY value in `ChatbotService.java` and `application.properties` to your own OpenAI API key.
-4. Start the application: `java -jar ProductAssistBot.jar`
-5. Open a web browser and navigate to `http://localhost:8080/`
+2. Register for an API key on the OpenAI website
+3. Build the project: `./gradlew clean build`
+4. Update the API_KEY value in `ChatbotService.java` and `application.properties` to your own OpenAI API key.
+5. Start the application: `java -jar ProductAssistBot.jar`
+6. Open a web browser and navigate to `http://localhost:8080/`
+
+## Usage
+Enter a message in the chat interface and press Enter to receive a response from the chatbot. The chatbot will use the GPT-3 API to generate a response based on the user's input.
 
 ## Contributing
 
